@@ -19,17 +19,17 @@
 
             
             //-----------------------------------------------------------------------------------------------
-            //|  ESC |   1   |   2   |   3   |   4   |   5   |               |   6   |   7   |   8   |   9   |   0   |BT_CLRALL|
-            //|  TAB |   Q   |   W   |   E   |   R   |   T   |               |   Y   |   U   |   I   |   O   |   P   |BT_NXT | 
-            //| SHIFT|   A   |   S   |   D   |   F   |   G   |               |   H   |   J   |   K   |   L   |   ;   |BT_PRV |
-            //|  CTL |   Z   |   X   |   C   |   V   |   B   |               |   N   |   M   |   ,   |   .   |   /   |RSHIFT |
+            //|BT_CLRALL|   1   |   2   |   3   |   4   |   5   |               |   6   |   7   |   8   |   9   |   0   |BT_CLRALL|
+            //|  BT_NXT |   Q   |   W   |   E   |   R   |   T   |               |   Y   |   U   |   I   |   O   |   P   |BT_NXT | 
+            //|  BT_PRV |   A   |   S   |   D   |   F   |   G   |               |   H   |   J   |   K   |   L   |   ;   |BT_PRV |
+            //| STIOULK |   Z   |   X   |   C   |   V   |   B   |               |   N   |   M   |   ,   |   .   |   /   |RSHIFT |
             //                       | BT 0 | SUPER | SYMBL | ENTER |  ALT  | SPACE | BKSPCE|STIOULK|
 
             bindings = <
-              &kp ESC &kp N1  &kp N2  &kp N3  &kp N4  &kp N5                  &kp N6  &kp N7  &kp N8  &kp N9  &kp N0  &bt BT_CLR_ALL
-              &kp TAB &kp Q   &kp W   &kp E   &kp R   &kp T                   &kp Y   &kp U   &kp I   &kp O   &kp P   &bt BT_NXT
-              &kp LSHIFT &kp A &kp S  &kp D   &kp F   &kp G                   &kp H   &kp J   &kp K   &kp L   &kp SEMICOLON &bt BT_PRV
-              &kp LCTRL &kp Z &kp X   &kp C   &kp V   &kp B                   &kp N   &kp M   &kp COMMA &kp DOT &kp SLASH &kp RSHIFT
+              &bt BT_CLR_ALL &kp N1  &kp N2  &kp N3  &kp N4  &kp N5                  &kp N6  &kp N7  &kp N8  &kp N9  &kp N0  &bt BT_CLR_ALL
+              &bt BT_NXT &kp Q   &kp W   &kp E   &kp R   &kp T                   &kp Y   &kp U   &kp I   &kp O   &kp P   &bt BT_NXT
+              &bt BT_PRV &kp A &kp S  &kp D   &kp F   &kp G                   &kp H   &kp J   &kp K   &kp L   &kp SEMICOLON &bt BT_PRV
+              &studio_unlock &kp Z &kp X   &kp C   &kp V   &kp B                   &kp N   &kp M   &kp COMMA &kp DOT &kp SLASH &kp RSHIFT
                         &trans  &kp LGUI &mo 1  &kp ENTER               &kp LALT &kp SPACE &kp BACKSPACE &studio_unlock
             >;
         };
