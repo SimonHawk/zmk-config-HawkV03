@@ -1,0 +1,16 @@
+if SHIELD_HAWKV03_LEFT
+
+config ZMK_KEYBOARD_NAME
+    default "HawkV03"
+
+config ZMK_SPLIT_ROLE_CENTRAL
+    default y
+
+endif # SHIELD_HAWKV03_LEFT
+
+if SHIELD_HAWKV03_LEFT || SHIELD_HAWKV03_RIGHT
+
+config ZMK_SPLIT
+    default y
+
+endif # SHIELD_HAWKV03_LEFT || SHIELD_HAWKV03_RIGHT
